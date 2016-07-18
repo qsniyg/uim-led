@@ -84,7 +84,6 @@ void uimled_uim_connect(void)
     return;
 
   uimled_uim_fd = uim_helper_init_client_fd(uimled_uim_disconnect);
-  printf("%i\n", uimled_uim_fd);
 
   if (uimled_uim_fd < 0)
     return;
